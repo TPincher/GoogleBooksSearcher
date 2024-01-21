@@ -37,7 +37,7 @@ const Bookshelf = ({searchTerm, searchType, current, setCurrent}) => {
     const clonedBooks = [...books]
   return (
     <div className={styles.bookshelf}>
-      <h3>Current search: {searchTerm}</h3>
+      <h2>Current search: {searchTerm}</h2>
       <div className={styles.pageNav}>
         <button className={styles.navItem} onClick={decrementSearch} disabled={current === 1}>Previous Page</button>
         {loading 
